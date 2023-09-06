@@ -22,8 +22,8 @@ export class LoginComponent {
   valid(): void{
     this.nextStep = !this.nextStep;
     if (this.cadastroForm.valid) {
-      console.log('aqui aqui')
-      this.router.navigate(['/home']);
+      console.log('aqui')
+      this.router.navigate(['home'])
     } else {
       this.nextStep = true;
     }
