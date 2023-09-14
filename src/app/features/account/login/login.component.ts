@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators  } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AccountService } from '../shared/account.service';
 
 @Component({
   selector: 'app-login',
@@ -12,11 +13,27 @@ export class LoginComponent {
     user: ['', Validators.required],
     password: ['', Validators.required]
   });
+
   nextStep: boolean = false;
   
-  constructor(private formBuilder: FormBuilder, private router: Router) { }
+  constructor(
+    private formBuilder: FormBuilder, 
+    private router: Router,
+    private accountService: AccountService
+    ) { }
 
   ngOnInit(): void {
+  }
+
+  async onSubmit() {
+    try {
+      const result = await this.accountService.login(this.cadastroForm.value);
+      console.log(`Login efeturado: ${result}`);
+
+      this.router.navigate(['']);
+    } catch (error) {
+      console.error(error);
+    }
   }
 
   valid(): void{

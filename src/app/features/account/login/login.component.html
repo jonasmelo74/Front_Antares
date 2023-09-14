@@ -3,7 +3,7 @@
   <div class="antares-login-form">
     <img src="../../../assets/logo/antares-logo.png" alt="Antares Logo" class="antares-logo">
     <div class="d-flex flex-column">
-      <form [formGroup]="cadastroForm">
+      <form (ngSubmit)="onSubmit()" [formGroup]="cadastroForm">
 
         <label class="d-flex justify-content-start text-white">Email</label>
         <input type="text" placeholder="Usuário" class="antares-input" formControlName="user">
