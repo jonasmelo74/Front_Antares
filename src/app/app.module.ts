@@ -7,6 +7,9 @@ import { LoginComponent } from './features/account/login/login.component';
 import { HomeComponent } from './features/layout/home/home.component';
 import { AuthenticationComponent } from './features/layout/authentication/authentication.component';
 import { CreateAccountComponent } from './features/account/create-account/create-account.component';
+import { NavComponent } from './features/layout/nav/nav.component';
+import { FooterComponent } from './features/layout/footer/footer.component';
+import { HeaderComponent } from './features/layout/header/header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { CreateAccountComponent } from './features/account/create-account/create
     LoginComponent,
     HomeComponent,
     CreateAccountComponent,
-    AuthenticationComponent
+    AuthenticationComponent,
+    NavComponent,
+    FooterComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
