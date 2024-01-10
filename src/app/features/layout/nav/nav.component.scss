@@ -1,6 +1,28 @@
-:host{
-.icon-transition {
-  transition: transform 10s ease;
-}
+:host {
+  .icon-transition {
+    transition: transform 10s ease;
+  }
+
+
+  .custom-border-bottom {
+    position: relative;
+  }
+
+  .nav-item {
+    border-radius: 50px;
+    border-width: 0.5px;
+    /* A largura da borda */
+    border-style: solid;
+    /* O estilo da borda (neste caso, sólida) */
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) blue rgba(0, 0, 0, 0);
+
+
+  }
+
+  :host {
+    background-color: #1D1E26;
+  }
+
+
 
 }

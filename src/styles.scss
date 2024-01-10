@@ -2,6 +2,12 @@
 :root{
   --primary: #D19B01;
   --secondary: #262932;
+  height: 100%;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
 }
 
 * {
