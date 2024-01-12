@@ -2,16 +2,16 @@ import { Component } from '@angular/core';
 import { itemsMenu } from './menu-items';
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.scss']
+  selector: 'app-sidebar',
+  templateUrl: './sidebar.component.html',
+  styleUrls: ['./sidebar.component.scss']
 })
-export class NavComponent {
+export class SidebarComponent {
 
   itemsMenu = itemsMenu;
+  collapsed = false;
 
   ngOnInit() {
-
   }
 
   menuNavItem(item:any): void{

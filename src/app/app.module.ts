@@ -10,6 +10,7 @@ import { CreateAccountComponent } from './features/account/create-account/create
 import { NavComponent } from './features/layout/nav/nav.component';
 import { FooterComponent } from './features/layout/footer/footer.component';
 import { HeaderComponent } from './features/layout/header/header.component';
+import { SidebarComponent } from './features/layout/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HeaderComponent } from './features/layout/header/header.component';
     AuthenticationComponent,
     NavComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
