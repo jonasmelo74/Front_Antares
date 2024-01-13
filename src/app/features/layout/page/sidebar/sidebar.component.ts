@@ -9,7 +9,7 @@ import { itemsMenu } from './menu-items';
 export class SidebarComponent {
 
   itemsMenu = itemsMenu;
-  collapsed = false;
+  collapsed = true;
 
   ngOnInit() {
   }
