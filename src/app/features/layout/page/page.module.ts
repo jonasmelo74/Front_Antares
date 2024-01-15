@@ -6,6 +6,7 @@ import { SidebarComponent } from "./sidebar/sidebar.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgModule } from "@angular/core";
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: []

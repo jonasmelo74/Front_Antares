@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { itemsMenu } from './menu-items';
+import { menuItens } from './menu-items';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,8 +8,9 @@ import { itemsMenu } from './menu-items';
 })
 export class SidebarComponent {
 
-  itemsMenu = itemsMenu;
-  collapsed = true;
+  menuItens = menuItens;
+  
+  collapsed = true ;
 
   ngOnInit() {
   }

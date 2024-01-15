@@ -1,5 +1,5 @@
 
-export const itemsMenu = [
+export const menuItens = [
   {
     routerLink: 'dashboard',
     name: "Dashboard",

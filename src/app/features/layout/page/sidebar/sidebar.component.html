@@ -1,18 +1,17 @@
 <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
   <div class="logo-container">
-    <button class="logo">A</button>
+    <img src="https://picsum.photos/100/100" alt="">
     <div class="logo-text" *ngIf="collapsed"> Angular</div>
-    <button class="btn-close" *ngIf="collapsed">
-      <i class="fal fa-times close-icon"></i>
-    </button>
   </div>
   <ul class="sidenav-nav">
-    <li class="sidenav-nav-item" *ngfor="let data of itemsMenu">
-      <a href="" class="sidenav-nav-link" [routerLink]="[data.routerLink]">
-        <i class="sidenav-link-icon" [class]="data.icon"></i>
-        <span class="sidenav-link-text" *ngIf="collapsed"> {{ data.name }}</span>
-      </a>
-    </li>
+    <ng-container  *ngfor="let data of menuItens">
+      {{data}}
+      <li class="sidenav-nav-item"> 
+        <div class="sidenav-nav-link" [routerLink]="[data.routerLink]">
+          <i class="sidenav-link-icon {data.icon}" [class]="data.icon"></i>
+          <span class="sidenav-link-text" *ngIf="collapsed"> {{ data.name }}</span>
+        </div>
+      </li>
+    </ng-container>
   </ul>
-
 </div>
