@@ -8,6 +8,7 @@ import { HomeComponent } from './features/layout/page/home/home.component';
 import { AuthenticationComponent } from './features/layout/authentication/authentication.component';
 import { CreateAccountComponent } from './features/account/create-account/create-account.component';
 import { PageModule } from './features/layout/page/page.module';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PageModule } from './features/layout/page/page.module';
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    PageModule
+    PageModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

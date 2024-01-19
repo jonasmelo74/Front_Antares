@@ -1,36 +1,39 @@
-// :host {
-//   .sidenav {
-//     background: #263238;
-//     transition: all .5s ease;
-//     position: fixed;
-//     z-index: 1;
-//     top: 0;
-//     width: 7rem;
-//     height: 100vh;
-//     box-shadow: 0.063rem 0 1.25 0 #8690a3;
-//   }
+:host {
+  .sidenav {
+    // background: #263238;
+    // transition: all .5s ease;
+    // position: fixed;
+    // z-index: 1;
+    // top: 0;
+    // width: 7rem;
+    // height: 100vh;
+    // box-shadow: 0.063rem 0 1.25 0 #8690a3;
+  }
 
-//   .logo {
-//     background: #fff;
-//     text-align: center;
-//     width: 3rem;
-//     min-width: 3rem;
-//     border-radius: 0.313rem;
-//     padding: 0.313rem;
-//     font-size: 24px;
-//     font-weight: 900;
-//     cursor: pointer;
-//     border: none;
-//   }
+  .logo {
+    width: 100%;
+    // background: #fff;
+    // text-align: center;
+    // width: 3rem;
+    // min-width: 3rem;
+    // border-radius: 0.313rem;
+    // padding: 0.313rem;
+    // font-size: 24px;
+    // font-weight: 900;
+    // cursor: pointer;
+    // border: none;
+  }
 
-//   .logo-text {
-//     margin-left: 1.5rem;
-//     font-size: 24px;
-//     font-weight: 700;
-//     color: #fff;
-//   }
-// }
-
+  .logo-text {
+   
+  }
+}
+.sidenav-nav{
+padding: 10px;
+}
+.sidenav-nav-item {
+  list-style-type: none; 
+}
 
 
 .sidebar {

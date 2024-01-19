@@ -14,7 +14,6 @@ import { CommonModule } from "@angular/common";
     SidebarComponent,
     FooterComponent,
     HeaderComponent,
-    SidebarComponent
   ],
   imports: [
     BrowserModule,
