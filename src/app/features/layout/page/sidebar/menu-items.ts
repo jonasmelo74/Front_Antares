@@ -4,96 +4,112 @@ export const menuItens = [
     routerLink: 'dashboard',
     name: "Dashboard",
     icon: "fa-house",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'client',
     name: "Clientes",
     icon: "fa-users",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'chatbot',
     name: "ChatBot",
     icon: "fa-bots",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'service',
     name: "Servidores",
     icon: "fa-server",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'plans',
     name: "Planos",
     icon: "fa-list",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'products',
     name: "Produtos",
     icon: "fa-shop",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'finance',
     name: "Financeiro",
     icon: "fa-coins",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'movement',
     name: "Movimentações",
     icon: "fa-arrows-turn-to-dots",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'reports',
     name: "Relatórios",
     icon: "fa-filter",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'tags',
     name: "Tags",
     icon: "fa-tags",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'gateways',
     name: "Gateways",
     icon: "fa-credit-card",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'whatsapp',
     name: "WhatsApp",
     icon: "fa-square-whatsapp",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'sms',
     name: "SMS",
     icon: "fa-message",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'indication',
     name: "Indicações",
     icon: "fa-layer-group",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'other',
     name: "Outros",
     icon: "fa-user-plus",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
   {
     routerLink: 'logs',
     name: "Logs",
     icon: "fa-font-awesome",
-    isOpen: false
+    isOpen: false,
+    expanded: false,
   },
 ];

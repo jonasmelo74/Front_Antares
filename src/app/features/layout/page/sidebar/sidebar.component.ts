@@ -19,4 +19,8 @@ export class SidebarComponent {
   menuNavItem(item:any): void{
     item.isOpen = !item.isOpen;
   }
+
+  toggleMenu(item: any): void {
+    item.expanded = !item.expanded;
+  }
 }

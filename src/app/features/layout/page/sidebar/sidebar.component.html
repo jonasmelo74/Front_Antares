@@ -5,12 +5,16 @@
   </div>
   <ul class="sidenav-nav">
     <ng-container *ngFor="let item of menuItens">
-      <li class="sidenav-nav-item">
+      <li class="sidenav-nav-item pointer" (click)="toggleMenu(item)">
         <div class="sidenav-nav-link" [routerLink]="[item.routerLink]">
           <i class="me-2 fa-solid" [class]="item.icon"></i>
           <span class="sidenav-link-text" *ngIf="collapsed">{{ item.name }}</span>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div *ngIf="item.expanded">
         </div>
       </li>
     </ng-container>    
   </ul>
+  
 </div>
