@@ -3,18 +3,18 @@
     <img src="https://picsum.photos/100/100" alt="">
     <div class="logo-text" *ngIf="collapsed"> Angular</div>
   </div>
-  <ul class="sidenav-nav">
-    <ng-container *ngFor="let item of menuItens">
-      <li class="sidenav-nav-item pointer" (click)="toggleMenu(item)">
-        <div class="sidenav-nav-link" [routerLink]="[item.routerLink]">
+  <ul class="sidenav-nav ms-4">
+    <ng-container *ngFor="let item of menuItens; let i = index">
+      <li class="sidenav-nav-item pointer mb-3" (click)="toggleMenu(i)">
+        <div class="sidenav-nav-link d-flex flex-row align-items-center" [routerLink]="[item.routerLink]">
           <i class="me-2 fa-solid" [class]="item.icon"></i>
           <span class="sidenav-link-text" *ngIf="collapsed">{{ item.name }}</span>
-          <i class="fa-solid fa-angle-right"></i>
+          <i class="ms-auto me-3 fa-solid fa-angle-right" [ngClass]="{'fa-angle-bottom': i === expandedIndex}"></i>
         </div>
-        <div *ngIf="item.expanded">
+        <div *ngIf="i === expandedIndex">
+          <span>teste</span>
         </div>
       </li>
-    </ng-container>    
+    </ng-container>
   </ul>
-  
 </div>

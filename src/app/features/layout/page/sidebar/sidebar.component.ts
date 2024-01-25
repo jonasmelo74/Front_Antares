@@ -11,6 +11,7 @@ export class SidebarComponent {
   menuItens = menuItens;
   
   collapsed = true ;
+  expandedIndex: number | null = null;
 
   ngOnInit() {
     console.log(this.menuItens)
@@ -20,7 +21,7 @@ export class SidebarComponent {
     item.isOpen = !item.isOpen;
   }
 
-  toggleMenu(item: any): void {
-    item.expanded = !item.expanded;
+  toggleMenu(index: any): void {
+    this.expandedIndex === index ? this.expandedIndex = null : this.expandedIndex = index;
   }
 }
