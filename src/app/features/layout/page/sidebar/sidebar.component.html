@@ -3,7 +3,7 @@
     <img src="https://picsum.photos/100/100" alt="">
     <div class="logo-text" *ngIf="collapsed"> Angular</div>
   </div>
-  <ul class="sidenav-nav ms-4">
+  <ul class="sidenav-nav ms-1">
     <ng-container *ngFor="let item of menuItens; let i = index">
       <li class="sidenav-nav-item pointer mb-3" (click)="toggleMenu(i)">
         <div class="sidenav-nav-link d-flex flex-row align-items-center" [routerLink]="[item.routerLink]">

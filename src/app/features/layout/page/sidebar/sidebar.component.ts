@@ -9,9 +9,8 @@ import { menuItens } from './menu-items';
 export class SidebarComponent {
 
   menuItens = menuItens;
-  
-  collapsed = true ;
   expandedIndex: number | null = null;
+  collapsed = true;
 
   ngOnInit() {
     console.log(this.menuItens)

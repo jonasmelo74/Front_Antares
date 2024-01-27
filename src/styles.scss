@@ -3,11 +3,40 @@
   --primary: #D19B01;
   --secondary: #262932;
   height: 100%;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 15px;
+    background-color: #262932;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3a3f4e;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #262932;
+}
+
+/* Personalização da barra de rolagem para Firefox */
+scrollbar-width: thin;
+scrollbar-color: #4CAF50 #f1f1f1;
+
+/* Personalização da barra de rolagem para Internet Explorer */
+-ms-overflow-style: none;
+scrollbar-face-color: #f1f1f1;
+scrollbar-highlight-color: #4CAF50;
+scrollbar-shadow-color: #4CAF50;
+scrollbar-3dlight-color: #4CAF50;
+scrollbar-arrow-color: #4CAF50;
+scrollbar-darkshadow-color: #4CAF50;
 }
 
 * {
   margin: 0;
   padding: 0;
+  scrollbar-border-radius: 6px
 }
 
 body {
@@ -17,3 +46,4 @@ body {
 .pointer{
   cursor: pointer;
 }
+
