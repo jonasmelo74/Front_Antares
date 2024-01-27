@@ -5,7 +5,7 @@
   </div>
   <ul class="sidenav-nav ms-1">
     <ng-container *ngFor="let item of menuItens; let i = index">
-      <li class="sidenav-nav-item pointer mb-3" (click)="toggleMenu(i)">
+      <li class="sidenav-nav-item pointer mb-3 text-white" (click)="toggleMenu(i)">
         <div class="sidenav-nav-link d-flex flex-row align-items-center" [routerLink]="[item.routerLink]">
           <i class="me-2 fa-solid" [class]="item.icon"></i>
           <span class="sidenav-link-text" *ngIf="collapsed">{{ item.name }}</span>

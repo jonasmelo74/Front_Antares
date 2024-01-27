@@ -1,17 +1,15 @@
-:host{
+:host {
+  .app-container {
+    display: flex;
+    height: 100vh;
+  }
 
-.app-container {
-  display: flex;
-  height: 100vh;
-}
+  .content {
+    flex-grow: 1;
+  }
 
-.content {
-  flex-grow: 1;
-}
-
-app-sidebar{
-  background-color: red;
-  width: 280px;
-}
-
+  app-sidebar {
+    background-color: #0F354B;
+    width: 280px;
+  }
 }

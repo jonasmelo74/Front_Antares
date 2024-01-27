@@ -1,15 +1,14 @@
-/* login.component.css */
 :host{
   .antares-login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom, #e6aa00, #0f0f0e);
+    background: linear-gradient(to bottom, #0F354B, #0f0f0e);
   }
   
   .antares-login-form {
-    background-color: #262932;
+    background-color: #081F2B;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -19,12 +18,8 @@
   }
   
   .antares-logo {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
+    width: 200px;
     height: 50%;
-  }
-  
-  .link-suporte{
-    color: #d9a101;
   }
   
   .antares-input {
@@ -34,8 +29,6 @@
     border: 1px solid #ccc;
     border-radius: 3px;
     color: white !important;
-    background-color: #1e1e28;
-    border: 1px solid #1e1e28 !important;
   }
 
   .btn-warning{
