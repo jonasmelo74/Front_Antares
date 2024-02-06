@@ -13,7 +13,6 @@ export class SidebarComponent {
   collapsed = true;
 
   ngOnInit() {
-    console.log(this.menuItens)
   }
 
   menuNavItem(item:any): void{
