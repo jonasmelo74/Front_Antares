@@ -1,25 +1,46 @@
+@import '../../../../scss/variables';
+
 :host{
-  .antares-login-container {
+  .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom, #0F354B, #0f0f0e);
+    background: linear-gradient(to bottom, $color-golden, $color-black);
   }
   
-  .antares-login-form {
-    background-color: #081F2B;
-    padding: 20px;
+  .login-form {
+    background-color: #262932;
+    padding: 40px;
     border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px #d9a101;
     text-align: center;
-    width: 400px;
-    
+    width: 500px; 
+    img{
+      width: 70px;
+    }
   }
-  
-  .antares-logo {
-    width: 200px;
-    height: 50%;
+
+  .title-login {
+    img{
+      animation: balanco 2s infinite linear;
+    }
+    
+    @keyframes balanco {
+      0% { transform: rotate(-5deg); }
+      50% { transform: rotate(5deg); }
+      100% { transform: rotate(-5deg); }
+    }
+
+    .gestor{
+      color: #FFBF00;
+    }
+    .prime{
+      color: #FFBF00;
+    }
+    
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
   }
   
   .antares-input {
@@ -33,6 +54,15 @@
 
   .btn-warning{
     border-radius: 10px;
+  }
+
+  .btn-primary {
+    background-color: $color-golden;
+    border-color: $color-golden;
+  }
+
+  .text-primary {
+    color: $color-golden !important;
   }
 }
 

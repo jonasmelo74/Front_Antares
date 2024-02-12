@@ -1,6 +1,6 @@
-:host {
+@import '../../../../../scss/variables';
 
-  
+:host {
   .logo {
     width: 100%;
   }
@@ -33,7 +33,7 @@
   }
 
   .sidenav-nav-link:hover{
-    background-color: #0b2d41;
+    background-color: $color-black-secundary;
   }
 
   .sidenav-link-text {
@@ -48,6 +48,16 @@
   .fa-angle-bottom{
     transition: all 0.3s ease;
     transform: rotate(90deg);
+  }
+
+  .logo-container {
+    img{
+      max-width: 100px;
+      max-height: 50px;
+    }
+    color: $color-golden-secundary;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
   }
   
 }

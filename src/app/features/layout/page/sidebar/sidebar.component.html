@@ -1,7 +1,8 @@
 <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
-  <div class="logo-container">
-    <img src="https://picsum.photos/100/100" alt="">
-    <div class="logo-text" *ngIf="collapsed"> Angular</div>
+  <div class="logo-container text-center me-2 mt-3">
+    <img src="../../../assets/logo/logo_fogo.png" alt="Antares Logo">
+    <span class="gestor">GESTOR </span>
+    <span class="prime">PRIME</span>
   </div>
   <ul class="sidenav-nav ms-1">
     <ng-container *ngFor="let item of menuItens; let i = index">
