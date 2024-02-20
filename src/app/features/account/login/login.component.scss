@@ -1,68 +1,93 @@
 @import '../../../../scss/variables';
 
-:host{
+:host {
   .login-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to bottom, $color-golden, $color-black);
+    background-color: #696CFF;
+    background-image: radial-gradient(circle at center,
+        #696CFF 0%,
+        #7781FF 25%,
+        #8595FF 50%,
+        #93A9FF 75%,
+        #A1BBFF 100%);
   }
-  
+
   .login-form {
     background-color: #262932;
     padding: 40px;
     border-radius: 5px;
-    box-shadow: 0px 2px 4px #d9a101;
     text-align: center;
-    width: 500px; 
-    img{
-      width: 70px;
-    }
   }
 
   .title-login {
-    img{
+    img {
       animation: balanco 2s infinite linear;
-    }
-    
-    @keyframes balanco {
-      0% { transform: rotate(-5deg); }
-      50% { transform: rotate(5deg); }
-      100% { transform: rotate(-5deg); }
+      width: 80px;
     }
 
-    .gestor{
-      color: #FFBF00;
+    h1 {
+      font-weight: 700;
+      color: $color-primary;
+      font-size: 30px;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      background-image: linear-gradient(to right, #696CFF 0%, #999BFF 100%);
+      background-size: 200% 100%;
+      background-position: 0 0;
+      animation: animate 3s linear infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
-    .prime{
-      color: #FFBF00;
+
+    @keyframes balanco {
+      0% {
+        transform: rotate(-5deg);
+      }
+
+      50% {
+        transform: rotate(5deg);
+      }
+
+      100% {
+        transform: rotate(-5deg);
+      }
     }
-    
-    font-weight: 800;
-    font-family: "Montserrat", sans-serif;
+
+    @keyframes animate {
+      0% {
+        background-position: 0 0;
+        /* Gradiente na posição inicial */
+      }
+
+      100% {
+        background-position: -200% 0;
+        /* Gradiente na posição final */
+      }
+    }
   }
-  
+
   .antares-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    color: white !important;
+    color: black !important;
   }
 
-  .btn-warning{
+  .btn-warning {
     border-radius: 10px;
   }
 
   .btn-primary {
-    background-color: $color-golden;
-    border-color: $color-golden;
+    background-color: $color-primary;
+    border-color: $color-primary;
   }
 
   .text-primary {
-    color: $color-golden !important;
+    color: $color-primary !important;
   }
 }
-
