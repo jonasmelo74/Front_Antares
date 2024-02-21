@@ -12,6 +12,9 @@
 
   app-sidebar {
     background-color: $color-black-secundary;
-    width: 280px;
+    width: 70px;
+    &:hover{
+      width: 280px;
+    }
   }
 }

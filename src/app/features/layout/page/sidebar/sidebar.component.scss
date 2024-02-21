@@ -20,13 +20,12 @@
   }
 
   .sidenav {
-    /* Additional padding to avoid content overlapping logo */
     padding-top: 60px;
   }
 
   .sidenav-collapsed {
     overflow-y: auto;
-    height: 100vh; /* Consider adjusting for header/footer heights */
+    height: 100vh; 
   }
 
   .icon-container {
@@ -36,7 +35,7 @@
   }
 
   .sidenav-content {
-    height: calc(100vh - 60px); /* Accommodate fixed logo */
+    height: calc(100vh - 60px);
   }
 
   .sidenav-nav {
