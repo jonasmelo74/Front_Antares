@@ -9,12 +9,4 @@
   .content {
     flex-grow: 1;
   }
-
-  app-sidebar {
-    background-color: $color-black-secundary;
-    width: 70px;
-    &:hover{
-      width: 280px;
-    }
-  }
 }

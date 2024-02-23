@@ -8,7 +8,7 @@
       <ng-container *ngFor="let item of menuItens; let i = index">
         <li class="sidenav-nav-item pointer mb-3 text-white" (click)="toggleMenu(i)">
           <div class="sidenav-nav-link d-flex flex-row align-items-center" [routerLink]="[item.routerLink]">
-            <i class="me-2 fa-solid" [class]="item.icon"></i>
+            <i class="ms-2 me-2 fa-lg fa-solid" [class]="item.icon"></i>
             <span class="sidenav-link-text" *ngIf="collapsed">{{ item.name }}</span>
             <i class="ms-auto me-3 fa-solid fa-angle-right" [ngClass]="{'fa-angle-bottom': i === expandedIndex}"></i>
           </div>

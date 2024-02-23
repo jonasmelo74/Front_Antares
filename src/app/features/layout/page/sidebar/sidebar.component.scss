@@ -1,6 +1,25 @@
 @import '../../../../../scss/variables';
 
 :host {
+  font-weight: 600;
+
+  .sidenav {
+    width: 70px;
+    &:hover {
+      width: 280px;
+    }
+    color: $color-black-secundary;
+    background-color: $color-black-secundary;
+  }
+
+  .sidenav .sidenav-link-text {
+    display: none;
+  }
+  
+  .sidenav:hover .sidenav-link-text {
+    display: inline;
+  }
+
   .logo-container {
     position: fixed;
     top: 0;
@@ -25,7 +44,7 @@
 
   .sidenav-collapsed {
     overflow-y: auto;
-    height: 100vh; 
+    height: 100vh;
   }
 
   .icon-container {
@@ -56,10 +75,6 @@
 
   .sidenav-nav-link:hover {
     background-color: $color-black-secundary;
-  }
-
-  .sidenav-link-text {
-    font-weight: 600;
   }
 
   .sidebar {
