@@ -4,18 +4,35 @@
   font-weight: 600;
 
   .sidenav {
-    width: 70px;
-    &:hover {
-      width: 280px;
-    }
+    width: 80px;
     color: $color-black-secundary;
     background-color: $color-black-secundary;
+    transition: width 0.3s ease-in-out;
+    box-shadow: 5px solid rgba(130, 138, 130, 0.5);
+  
+    .sidenav-link-text {
+      color: $color-black-secundary !important;
+    }
+  
+    h3 {
+      color: $color-black-secundary !important;
+    }
+  
+    &:hover {
+      width: 280px;
+      overflow-x: hidden;
+  
+      .sidenav-link-text {
+        color: white !important;
+      }
+  
+      h3 {
+        color: $color-primary !important;
+      }
+    }
   }
 
-  .sidenav .sidenav-link-text {
-    display: none;
-  }
-  
+ 
   .sidenav:hover .sidenav-link-text {
     display: inline;
   }

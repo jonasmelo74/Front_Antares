@@ -6,6 +6,15 @@
     height: 100vh;
   }
 
+  app-sidebar{
+    // box-shadow: 10px 0 10px 0 black;
+  }
+
+  app-header{
+
+    // box-shadow: 0 0 10px 0 black;
+  }
+
   .content {
     flex-grow: 1;
   }
