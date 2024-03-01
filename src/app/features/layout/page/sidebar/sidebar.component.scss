@@ -4,6 +4,8 @@
   font-weight: 600;
 
   .sidenav {
+    overflow-y: auto;
+    height: 100vh;
     width: 80px;
     color: $color-black-secundary;
     background-color: $color-black-secundary;
@@ -17,8 +19,10 @@
     h3 {
       color: $color-black-secundary !important;
     }
-  
-    &:hover {
+  }
+
+  .sidenav-collapsed:hover {
+ 
       width: 280px;
       overflow-x: hidden;
   
@@ -29,12 +33,25 @@
       h3 {
         color: $color-primary !important;
       }
-    }
+ 
   }
 
+
+  .teste{
+
+    .sidenav-link-text {
+      color: white !important;
+    }
+
+    h3 {
+      color: $color-primary !important;
+    }
+    width: 280px;
+  }
  
   .sidenav:hover .sidenav-link-text {
     display: inline;
+    
   }
 
   .logo-container {
@@ -59,11 +76,7 @@
     padding-top: 60px;
   }
 
-  .sidenav-collapsed {
-    overflow-y: auto;
-    height: 100vh;
-  }
-
+ 
   .icon-container {
     flex-grow: 1;
     display: flex;

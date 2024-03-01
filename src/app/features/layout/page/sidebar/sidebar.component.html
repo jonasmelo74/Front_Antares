@@ -1,4 +1,4 @@
-<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed' : ''">
+<div class="sidenav" [ngClass]="collapsed ? 'teste' : 'sidenav-collapsed'">
   <div class="logo-container text-center ms-3 me-2 mt-3 d-flex flex-row align-items-center justify-content-center">
     <img src="../../../assets/logo/logo_fogo.png" alt="Antares Logo">
     <h3>GESTOR PRIME</h3>
@@ -9,7 +9,7 @@
         <li class="sidenav-nav-item pointer mb-3 text-white" (click)="toggleMenu(i)">
           <div class="sidenav-nav-link d-flex flex-row align-items-center" [routerLink]="[item.routerLink]">
             <i class="ms-2 me-2 fa-lg fa-solid" [class]="item.icon"></i>
-            <span class="sidenav-link-text" *ngIf="collapsed">{{ item.name }}</span>
+            <span class="sidenav-link-text">{{ item.name }}</span>
             <i class="ms-auto me-3 fa-solid fa-angle-right" [ngClass]="{'fa-angle-bottom': i === expandedIndex}"></i>
           </div>
           <div *ngIf="i === expandedIndex">

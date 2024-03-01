@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { menuItens } from './menu-items';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,6 +8,10 @@ import { menuItens } from './menu-items';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
+
+  constructor(private sharedService: SharedService) {
+    this.sharedService.currentClickExpansed.subscribe(state => this.collapsed = state);
+  }
 
   menuItens = menuItens;
   expandedIndex: number | null = null;

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  constructor(private sharedService: SharedService) { }
+
+  toggleClickExpansed() {
+    this.sharedService.changeClickExpansed(true);
+  }
 }
