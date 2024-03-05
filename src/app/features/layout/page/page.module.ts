@@ -8,6 +8,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { MainComponent } from './main/main.component';
+import { MainModulo } from "./main/main.module";
 
 @NgModule({
   declarations: [
@@ -15,14 +16,13 @@ import { MainComponent } from './main/main.component';
     SidebarComponent,
     FooterComponent,
     HeaderComponent,
-    MainComponent,
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
     CommonModule,
-    PageModule
+    MainModulo
   ],
   providers: [],
   bootstrap: []
