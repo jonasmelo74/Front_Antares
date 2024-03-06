@@ -10,6 +10,9 @@ import { DashboardMainComponent } from './dashboard-main.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    DashboardMainComponent
   ]
 })
 export class DashboardMainModule { }
