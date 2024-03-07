@@ -4,9 +4,7 @@ $cor-primaria: #0073b7;
 $cor-secundaria: #f2f2f2;
 $espaçamento: 16px;
 
-.container-teste {
-  margin-right: 10px;
-  margin-left: 10px;
+.container-dash {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,7 +12,11 @@ $espaçamento: 16px;
 }
 
 .bloco {
-  width: calc(25% - $espaçamento * 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(25% - $espaçamento * 1.5);
   height: 150px;
   margin-bottom: $espaçamento;
   padding: $espaçamento;
