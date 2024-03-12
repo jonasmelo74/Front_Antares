@@ -1,22 +1,31 @@
 @import '../../../../../scss/variables';
 
+:host,
+.app-container,
+app-header,
+app-main {
+  width: calc(100vw - 80px);
+}
+
 :host {
-  .app-container {
-    display: flex;
-    height: 100vh;
-  }
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 
-  app-sidebar{
-    // box-shadow: 10px 0 10px 0 black;
-  }
+.app-container {
+  display: flex;
+  flex: 1;
+}
 
-  app-header{
+app-sidebar {
+  height: 100vh;
+}
 
-    // box-shadow: 0 0 10px 0 black;
-  }
-
-  .content {
-    flex-grow: 1;
-    height: 40px;
-  }
+app-main {
+  flex: 1;
+  background-color: red;
+  overflow-y: auto;
 }

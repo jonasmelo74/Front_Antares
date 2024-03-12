@@ -14,7 +14,7 @@ $espaçamento: 16px;
 .bloco {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   width: calc(25% - $espaçamento * 1.5);
   height: 150px;
@@ -34,5 +34,10 @@ $espaçamento: 16px;
 
   @media (max-width: 576px) {
     width: 100%;
+  }
+
+  .number-bold{
+    font-weight: 600;
+    font-size: 2rem;
   }
 }
