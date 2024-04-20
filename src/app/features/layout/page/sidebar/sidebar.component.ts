@@ -1,23 +1,38 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { menuItens } from './menu-items';
 import { SharedService } from '../shared.service';
 
+interface SideNavToggle {
+  screenWidth: number;
+  collapsed: boolean;
+}
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-
-  constructor(private sharedService: SharedService) {
-    this.sharedService.currentClickExpansed.subscribe(state => this.collapsed = state);
-  }
-
+  @Output() onToggleSideNav = EventEmitter<SideNavToggle> = new EventEmitter();
+  
   menuItens = menuItens;
   expandedIndex: number | null = null;
-  collapsed = true;
+  collapsed:boolean = true;
+
+
+
+  constructor(private sharedService: SharedService) {
+  }
+
 
   ngOnInit() {
+  }
+
+  toggleCollapse(): void {
+    this.collapsed = !this.collapsed;
+  }
+
+  closeSidenav(): void {
+    this.collapsed = false;
   }
 
   menuNavItem(item:any): void{
