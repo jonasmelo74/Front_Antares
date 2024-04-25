@@ -14,6 +14,7 @@ interface SideNavToggle {
 export class SidebarComponent {
   @Output() onToggleSideNav = EventEmitter<SideNavToggle> = new EventEmitter();
   
+  
   menuItens = menuItens;
   expandedIndex: number | null = null;
   collapsed:boolean = true;
