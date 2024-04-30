@@ -12,12 +12,12 @@ interface SideNavToggle {
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
-  @Output() onToggleSideNav = EventEmitter<SideNavToggle> = new EventEmitter();
-  
-  
-  menuItens = menuItens;
-  expandedIndex: number | null = null;
+ 
+  @Output() onToggleSideNav = new EventEmitter<SideNavToggle>();
   collapsed:boolean = true;
+  screenWidth: number = 0;
+  menuItens = menuItens;
+  navData = menuItens;
 
 
 
@@ -30,17 +30,15 @@ export class SidebarComponent {
 
   toggleCollapse(): void {
     this.collapsed = !this.collapsed;
+    this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth})
   }
 
   closeSidenav(): void {
     this.collapsed = false;
+    this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth})
   }
 
   menuNavItem(item:any): void{
     item.isOpen = !item.isOpen;
-  }
-
-  toggleMenu(index: any): void {
-    this.expandedIndex === index ? this.expandedIndex = null : this.expandedIndex = index;
   }
 }

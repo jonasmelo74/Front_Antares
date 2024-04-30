@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+interface SideNavToggle {
+  screenWidth: number;
+  collapsed: boolean;
+}
 
 @Component({
   selector: 'app-home',
@@ -6,8 +10,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  title = 'sidenav';
+
+  isSideNavCollapsed: boolean = false;
+  screenWidth = 0;
 
   ngOnInit() {
+  }
+
+  onToggleSideNav(data: SideNavToggle): void {
+    this.screenWidth = data.screenWidth;
+    this.isSideNavCollapsed = data.collapsed;
   }
 
 }
