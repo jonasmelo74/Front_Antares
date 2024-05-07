@@ -19,8 +19,6 @@ export class SidebarComponent {
   menuItens = menuItens;
   navData = menuItens;
 
-
-
   constructor(private sharedService: SharedService) {
   }
 

@@ -4,7 +4,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { MainComponent } from './main.component';
-import { DashboardMainModule } from "./dashboard-main/dashboard-main.module";
+import { DashboardMainModule } from "../components/dashboard-main/dashboard-main.module";
 
 @NgModule({
   declarations: [

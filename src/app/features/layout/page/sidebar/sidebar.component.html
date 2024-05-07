@@ -13,7 +13,7 @@
     <ul class="sidenav-nav ms-1">
       <ng-container *ngFor="let item of menuItens; let i = index">
         <li class="sidenav-nav-item">
-          <a class="sidenav-nav-link" [routerLink]="[item.routerLink]">
+          <a class="sidenav-nav-link" [routerLink]="[item.routerLink]" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
             <i class="sidenav-link-icon fa-lg fa-solid" [class]="item.icon"></i>
             <span class="sidenav-link-text" *ngIf="collapsed">{{ item.name }}</span>
             <!-- <i class="ms-auto me-3 fa-solid fa-angle-right" [ngClass]="{'fa-angle-bottom': i === expandedIndex}"></i> -->
