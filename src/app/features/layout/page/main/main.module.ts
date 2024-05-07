@@ -4,19 +4,20 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { MainComponent } from './main.component';
-import { DashboardMainModule } from "../components/dashboard-main/dashboard-main.module";
+import { DashboardMainComponent } from "../components/dashboard-main/dashboard-main.component";
+
 
 @NgModule({
   declarations: [
     MainComponent,
   ],
   imports: [
-    DashboardMainModule,
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    CommonModule
-  ],
+    CommonModule,
+    DashboardMainComponent
+],
   exports: [
     MainComponent,
   ],

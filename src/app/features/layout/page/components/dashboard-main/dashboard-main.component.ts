@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-dashboard-main',
-  templateUrl: './dashboard-main.component.html',
-  styleUrls: ['./dashboard-main.component.scss']
+    selector: 'app-dashboard-main',
+    templateUrl: './dashboard-main.component.html',
+    styleUrls: ['./dashboard-main.component.scss'],
+    standalone: true
 })
 export class DashboardMainComponent implements OnInit {
 

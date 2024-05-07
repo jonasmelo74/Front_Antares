@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+// import { Component } from '@angular/core';
 
-@Component({
-  selector: 'app-create-account',
-  templateUrl: './create-account.component.html',
-  styleUrls: ['./create-account.component.scss']
-})
-export class CreateAccountComponent {
+// @Component({
+//     selector: 'app-create-account',
+//     templateUrl: './create-account.component.html',
+//     styleUrls: ['./create-account.component.scss'],
+//     standalone: true
+// })
+// export class CreateAccountComponent {
 
   
-}
+// }

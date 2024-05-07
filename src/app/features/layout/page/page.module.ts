@@ -11,20 +11,18 @@ import { MainComponent } from './main/main.component';
 import { MainModulo } from "./main/main.module";
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    SidebarComponent,
-    FooterComponent,
-    HeaderComponent,
-  ],
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    AppRoutingModule,
-    CommonModule,
-    MainModulo
-  ],
-  providers: [],
-  bootstrap: []
+    imports: [
+        BrowserModule,
+        ReactiveFormsModule,
+        AppRoutingModule,
+        CommonModule,
+        MainModulo,
+        HomeComponent,
+        SidebarComponent,
+        FooterComponent,
+        HeaderComponent
+    ],
+    providers: [],
+    bootstrap: []
 })
 export class PageModule { }

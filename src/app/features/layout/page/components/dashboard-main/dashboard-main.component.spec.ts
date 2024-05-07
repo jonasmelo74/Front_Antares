@@ -8,8 +8,8 @@ describe('DashboardMainComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DashboardMainComponent]
-    });
+    imports: [DashboardMainComponent]
+});
     fixture = TestBed.createComponent(DashboardMainComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

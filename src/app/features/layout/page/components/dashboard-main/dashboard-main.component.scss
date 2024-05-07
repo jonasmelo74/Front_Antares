@@ -14,7 +14,7 @@ $espaçamento: 16px;
 .bloco {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   width: calc(25% - $espaçamento * 1.5);
   height: 150px;
