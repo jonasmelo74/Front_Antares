@@ -10,21 +10,23 @@ import { HomeComponent } from './features/layout/page/home/home.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
-    children: [
-      { path: '', component: HomeComponent },
-    ],
     canActivate: [AuthGuard]
   },
   {
-    path: '',
+    path: 'auth',
     component: AuthenticationComponent,
     children: [
       { path: '', redirectTo: 'login', pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
       // {path: 'create-account', component: CreateAccountComponent}
     ]
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
   },
   {
     path: '**',
